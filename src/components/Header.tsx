@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import { Button } from '@mui/material';
+import Image from 'mui-image';
 
 function Header() {
   return (
@@ -11,7 +12,7 @@ function Header() {
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex' }}>
             <Box sx={{ maxWidth: '128px'}}>
-              <img src="/logo.png" alt="LOGO" width={'75%'} style={{ display: 'flex', marginTop: 'auto', marginBottom: 'auto'}} />
+              <Image src="/logo-nobg.png" alt="LOGO" width={'75%'} style={{ display: 'flex', marginTop: 'auto', marginBottom: 'auto'}} />
             </Box>
           </Box>
 

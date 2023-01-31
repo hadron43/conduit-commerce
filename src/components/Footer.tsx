@@ -5,6 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { IconButton } from '@mui/material';
+import Image from 'mui-image';
 
 function Footer() {
   return (
@@ -13,7 +14,7 @@ function Footer() {
       <Toolbar disableGutters sx={{ my: 5 }}>
         <Box sx={{ flexGrow: 1, display: 'flex' }}>
           <Box sx={{ maxWidth: '256px' }}>
-            <img src="/logo.png" alt="LOGO" width={'75%'} style={{ display: 'flex', marginTop: 'auto', marginBottom: 'auto' }} />
+            <Image src="/logo-nobg.png" alt="LOGO" width={'75%'} style={{ display: 'flex', marginTop: 'auto', marginBottom: 'auto' }} />
           </Box>
         </Box>
 

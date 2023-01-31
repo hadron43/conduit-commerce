@@ -46,7 +46,7 @@ function PartnerForm() {
   }
 
   return (
-    <Box sx={{ my: 10, mb: 20 }}>
+    <Box sx={{ my: 15, mb: 20 }}>
       <Typography variant="h3" gutterBottom align="center">
         Want to learn more? <br />
         Let's Partner

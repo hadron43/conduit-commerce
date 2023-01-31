@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
+import Image from "mui-image";
 
 function Banner() {
   return (
@@ -24,7 +25,7 @@ function Banner() {
         </Grid>
 
         <Grid xs={12} md={6} sx={{ my: 4 }}>
-          <img src="/doppio.gif" alt="banner" width={"100%"} />
+          <Image src="/doppio.gif" alt="banner" width={"100%"} />
         </Grid>
       </Grid>
     </Box>
