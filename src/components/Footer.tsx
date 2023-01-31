@@ -13,8 +13,8 @@ function Footer() {
       <hr />
       <Toolbar disableGutters sx={{ my: 5 }}>
         <Box sx={{ flexGrow: 1, display: 'flex' }}>
-          <Box sx={{ maxWidth: '256px' }}>
-            <Image src="/logo-nobg.png" alt="LOGO" width={'75%'} style={{ display: 'flex', marginTop: 'auto', marginBottom: 'auto' }} />
+          <Box sx={{ maxWidth: '150px' }}>
+            <Image src="/logo-nobg.png" alt="LOGO" width={'85%'} style={{ display: 'flex', marginTop: 'auto', marginBottom: 'auto' }} />
           </Box>
         </Box>
 
