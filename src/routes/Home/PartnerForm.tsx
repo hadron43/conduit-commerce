@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Box, Button, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent, TextField, Typography } from "@mui/material";
+import { Box, Button, InputLabel, MenuItem, Select, TextField, Typography } from "@mui/material";
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
-import { TextChange } from 'typescript';
 
 function PartnerForm() {
   const roles = [

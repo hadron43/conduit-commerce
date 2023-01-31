@@ -1,7 +1,7 @@
 import './App.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Box, Container } from '@mui/material';
+import { Container } from '@mui/material';
 import Header from './components/Header';
 import Home from './routes/Home';
 import Footer from './components/Footer';
