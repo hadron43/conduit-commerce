@@ -5,6 +5,7 @@ import { Container, responsiveFontSizes } from '@mui/material';
 import Header from './components/Header';
 import Home from './routes/Home';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
 let darkTheme = createTheme({
   palette: {
@@ -18,13 +19,17 @@ let darkTheme = createTheme({
   },
 });
 
+let lightTheme = createTheme({})
+
 darkTheme = responsiveFontSizes(darkTheme);
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />
-      <Header />
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Container maxWidth="lg">
         <Home />
       </Container>

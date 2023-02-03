@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Box, Button, InputLabel, MenuItem, Select, TextField, Typography } from "@mui/material";
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
+let endpoint = "https://d011a15eebdf.ngrok.io/submit";
+
 function PartnerForm() {
   const roles = [
     {
@@ -39,13 +41,31 @@ function PartnerForm() {
 
   const handleSubmit = (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault()
-    console.log({
+    let obj = {
       name, email, phone, company, website, role
+    }
+    console.log(obj)
+
+    fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
+      body: JSON.stringify(obj)
+    })
+    .then(resp => {
+      if (resp.ok)
+        return resp.json()
+      throw Error('Error!')
+    })
+    .then(resp => {
+      console.log(resp)
     })
   }
 
   return (
-    <Box sx={{ my: 15, mb: 20 }}>
+    <Box sx={{ my: 15, mb: 20 }} id="partner-form">
       <Typography variant="h3" gutterBottom align="center">
         Want to learn more? <br />
         Let's Partner

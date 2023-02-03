@@ -17,7 +17,7 @@ function Banner() {
                 We empower DTC fulfillment teams to better onboard, serve, and maintain multi-platform marketplace integrations. Our powerful no-code solution helps fast-track integrations and monitor key datapoints, unlocking net-new sales channels, with a near-instant return on investment.
               </Typography>
 
-              <Button variant="contained" color="warning" size="medium" sx={{ px: 4 }}>
+              <Button variant="contained" color="warning" size="medium" sx={{ px: 4 }} href="#partner-form">
                 Request a demo
               </Button>
             </Box>
